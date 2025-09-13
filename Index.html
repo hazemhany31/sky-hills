@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sky-Hills – Residential Compound | NBIG Developments</title>
+  <link rel="icon" href="images/logo.png" />
+  <meta name="description" content="Sky-Hills Compound by NBIG Developments – Premium residential community in Egypt's New Administrative Capital. Integrated services, modern design, and flexible payment plans."/>
+  <meta name="keywords" content="Sky-Hills Compound, NBIG Developments, residential, New Administrative Capital, Egypt, luxury living, green spaces, real estate"/>
+  <meta name="author" content="NBIG Developments" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://nbig.com/sky-hills.html" />
+  <meta property="og:title" content="Sky-Hills Compound - Luxury Living in New Capital"/>
+  <meta property="og:description" content="Residential compound with malls, medical centers, leisure, and green spaces."/>
+  <meta property="og:image" content="https://nbig.com/images/sky-hills.jpg" />
+  <meta property="og:url" content="https://nbig.com/sky-hills.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fast Google Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <style>
+    html, body {margin:0;padding:0;overflow-x:hidden;}
+    .scroll-to-top {
+      position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;
+      background:#d4af37;color:white;display:flex;align-items:center;justify-content:center;
+      cursor:pointer;z-index:1000;
+    }
+    .scroll-to-top i {font-size:22px;}
+    @media (max-width:600px) {
+      .scroll-to-top {bottom:70px;}
+    }
+  
+  </style>
+</head>
+<body>
+  <!-- Scroll To Top Button -->
+  <button id="scrollToTopBtn" aria-label="Scroll to top" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <header class="header">
+    <div class="container">
+      <a href="https://new-build-egypt.com/" target="_blank">
+        <img src="images/logo.png" alt="NBIG Developments Logo" class="logo" loading="lazy"/>
+      </a>
+      <button id="lang-toggle" class="lang-btn" style="margin-left:18px">عربي</button>
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" data-key="home">Home</a></li>
+          <li><a href="#about" data-key="about">About</a></li>
+          <li><a href="#features" data-key="features">Features</a></li>
+          <li><a href="#contact" data-key="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-background" style="background:url('images/apartment/12.jpg') center/cover"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title" data-key="heroTitle">Sky-Hills Compound</h1>
+      <p class="hero-description" data-key="heroDescription">
+        Premium residential living in Egypt's October Gardens with green spaces, integrated services, and flexible payment plans.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/201112221121" target="_blank" class="btn btn-secondary" aria-label="WhatsApp Contact" data-key="ctaWhatsAppBtn">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="tel:+19938" class="btn btn-primary" aria-label="Call Now 19938" data-key="callNowBtn">
+          <i class="fas fa-phone"></i> Call Now 19938
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="vision-section section-bg">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:center;">
+      <div style="flex:1;min-width:320px;max-width:600px;">
+        <h2 data-key="videoTitle">Apartment Tour (Video)</h2>
+        <video width="100%" height="auto" controls poster="images/apartment-preview.jpg"
+          style="border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.2);" preload="none" title="Apartment Tour Video">
+          <source src="images/apartment-tour.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div style="flex:1;min-width:320px;max-width:600px;position:relative;">
+        <h2 data-key="galleryTourTitle">Apartment Tour (Gallery)</h2>
+        <button id="prevImg" aria-label="Previous Image"
+          style="position:absolute;left:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.6);border:none;
+          font-size:1.5rem;cursor:pointer;z-index:2;width:45px;height:45px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+          box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:all 0.3s ease;">
+          ❮
+        </button>
+        <img id="sliderImg" src="images/apartment/16.jpg" alt="Sky-Hills Apartment Gallery"
+          style="border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.2);object-fit:cover;width:100%;max-width:100%;transition:0.5s ease;" loading="lazy">
+        <button id="nextImg" aria-label="Next Image"
+          style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.6);border:none;
+          font-size:1.5rem;cursor:pointer;z-index:2;width:45px;height:45px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+          box-shadow:0 2px 8px rgba(0,0,0,0.2);transition:all 0.3s ease;">
+          ❯
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pdf-section">
+    <div class="map-container">
+      <div class="map-header">
+        <h2 data-key="brochureTitle">Project Brochure</h2>
+        <p data-key="brochureDesc">Download the full Sky-Hills project profile in PDF format</p>
+      </div>
+      <div class="map-wrapper">
+        <a href="pdf/Sky-Hills-Profile.pdf" target="_blank" style="display:block">
+          <img src="images/sky-hills-pdf-thumbnail.jpg" alt="Sky-Hills PDF Brochure" style="width:100%;height:auto" loading="lazy"/>
+        </a>
+      </div>
+      <div class="map-actions">
+        <a href="pdf/Sky-Hills-Profile.pdf" target="_blank" class="btn btn-primary" data-key="viewPdfBtn">
+          <i class="fas fa-file-pdf"></i> View PDF
+        </a>
+      </div>
+    </div>
+    
+       <!-- ground floor plans -->
+    <section class="files-and-info-section">
+      <div class="container">
+        <div class="file-list-card">
+          <h2>File List ground floor</h2>
+          <p>Download floor plans and apartment layouts in PDF format.</p>
+          <!-- الكارد الأول: أول 3 مساحات -->
+          <div class="inner-card" style="background:#f8f8f8;padding:18px;border-radius:12px;margin-bottom:18px;box-shadow:0 2px 8px rgba(0,0,0,0.07);display:flex;gap:16px;justify-content:center;">
+            <div class="file-links-grid" style="display:flex;gap:16px;">
+              <a href="pdfs/Type 2  ground floor 85 m.pdf" class="file-link" target="_blank">
+                <div class="link-text">
+                  <span class="file-title">ground floor</span>
+                  <span class="file-size">85m</span>
+                </div>
+              </a>
+              <a href="pdfs/Type 2  ground floor 88 m.pdf" class="file-link" target="_blank">
+                <div class="link-text">
+                  <span class="file-title">ground floor</span>
+                  <span class="file-size">88m</span>
+                </div>
+              </a>
+              <a href="pdfs/Type 2  ground floor 90 m.pdf" class="file-link" target="_blank">
+                <div class="link-text">
+                  <span class="file-title">ground floor</span>
+                  <span class="file-size">90m</span>
+                </div>
+              </a>
+            </div>
+            <span>garden size +50m</span>
+          </div>
+          
+          <!-- الكارد الثاني: المساحتين الباقيين -->
+          <div class="inner-card" style="background:#f8f8f8;padding:18px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.07);display:flex;gap:16px;justify-content:center;">
+            <div class="file-links-grid" style="display:flex;gap:16px;">
+              <a href="pdfs/Type 2  ground floor 170 m.pdf" class="file-link" target="_blank">
+                <div class="link-text">
+                  <span class="file-title">ground floor</span>
+                  <span class="file-size">170m</span>
+                </div>
+              </a>
+              <a href="pdfs/Type 2  ground floor 175 m.pdf" class="file-link" target="_blank">
+                <div class="link-text">
+                  <span class="file-title">ground floor</span>
+                  <span class="file-size">175m</span>
+                </div>
+              </a>
+            </div>
+            <span> garden size +100m</span>
+          </div>
+        </div>
+    
+        <div class="image-display-container">
+          <img src="images/apartment/17.jpg" alt="Apartment layout image" class="main-display-image">
+        </div>
+      </div>
+    </section>
+<!-- first floor -->
+<section class="files-and-info-section">
+  <div class="container">
+    <div class="file-list-card">
+      <h2>File List first floor</h2>
+      <p>Download floor plans and apartment layouts in PDF format.</p>
+      <div class="file-links-grid">
+        <a href="pdfs/Type 2  first floor 88 m.pdf" class="file-link" target="_blank">
+          <div class="link-text">
+            <span class="file-title">first floor</span>
+            <span class="file-size">88m</span>
+          </div>
+        </a> 
+        <a href="pdfs/Type 2  first floor 125 m.pdf" class="file-link" target="_blank">
+          <div class="link-text">
+            <span class="file-title">first floor</span>
+            <span class="file-size">125m</span>
+          </div>
+        </a>
+        <a href="pdfs/Type 2  first floor 135 m.pdf" class="file-link" target="_blank">
+          <div class="link-text">
+            <span class="file-title">first floor</span>
+            <span class="file-size">135m</span>
+          </div>
+        </a>
+       
+      </div>
+    </div>
+    <div class="image-display-container">
+      <img src="images/floor.jpg" alt="Apartment layout image" class="main-display-image">
+    </div>
+  </div>
+  <!-- typical floor -->
+<section class="files-and-info-section">
+  <div class="container">
+    <div class="file-list-card">
+      <h2>File List typical floor</h2>
+      <p>Download floor plans and apartment layouts in PDF format.</p>
+      <div class="file-links-grid">
+        <a href="pdfs/Type 2  typical floor 115 m.pdf" class="file-link" target="_blank">
+          <div class="link-text">
+            <span class="file-title">typical floor</span>
+            <span class="file-size">115m</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="image-display-container">
+      <img src="images/apartment/13.jpg" alt="Apartment layout image" class="main-display-image">
+    </div>
+  </div>
+  <!--  penthouse -->
+<section class="files-and-info-section">
+  <div class="container">
+    <div class="file-list-card">
+      <h2>File List penthouse</h2>
+      <p>Download floor plans and apartment layouts in PDF format.</p>
+      <div class="file-links-grid">
+        <a href="pdfs/Type 2 penthouse 185 m.pdf" class="file-link" target="_blank">
+          <div class="link-text">
+            <span class="file-title">penthouse</span>
+            <span class="file-size">185m</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="image-display-container">
+      <img src="images/apartment/17.jpg" alt="Apartment layout image" class="main-display-image">
+    </div>
+  </div>
+  
+</section>
+  <section class="map-section">
+    <div class="map-container">
+      <div class="map-header">
+        <h2 data-key="locationTitle">Location</h2>
+        <p data-key="locationDesc">Strategic position in October Gardens</p>
+      </div>
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3456.9007549335506!2d30.997299475550186!3d29.95353317496952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDU3JzEyLjciTiAzMMKwNTknNTkuNiJF!5e0!3m2!1sen!2seg!4v1756735871353!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="map-actions">
+        <a href="https://maps.app.goo.gl/CzWFDXpWD2k3xiQK8" target="_blank" class="btn btn-primary" data-key="viewOnMapBtn">
+          <i class="fas fa-map-marker-alt"></i> View on Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <form id="contact-form" style="max-width:600px;margin:2rem auto;">
+    <label for="name" data-key="contactFormName">Your Name</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email" data-key="contactFormEmail">Your Email</label>
+    <input type="email" id="email" name="email" required>
+    <label for="number" data-key="contactFormNumber">Your Number</label>
+    <input type="text" id="number" name="number" required>
+    <label for="message" data-key="contactFormMessage">Your Message</label>
+    <textarea id="message" name="message"></textarea>
+    <button type="submit" data-key="contactFormBtn">Send</button>
+  </form>
+  <p id="success-msg" style="display:none;color:green;">✅ Message sent successfully!</p>
+
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-content">
+        <h2 data-key="ctaTitle">Ready to Live the Sky-Hills Lifestyle?</h2>
+        <p data-key="ctaDesc">
+          Contact us today to learn more and secure your residential unit in Sky-Hills Compound. Enjoy a future of luxury and comfort.
+        </p>
+        <div class="cta-buttons">
+          <a href="tel:+201112221121" class="btn btn-primary" aria-label="Call Now 19938" data-key="ctaCallBtn">
+            <i class="fas fa-phone"></i> Call Now 19938
+          </a>
+          <a href="https://wa.me/201112221121" target="_blank" class="btn btn-secondary" aria-label="WhatsApp Contact" data-key="ctaWhatsAppBtn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-key="footer1Title">NBIG Developments</h3>
+          <p data-key="footer1Desc">Leading real estate developer in Egypt, specializing in residential, healthcare, and commercial projects.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nbigdevelopments" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/nbigdedevelopments/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@nbigdevelopments6485" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/201112221121" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 data-key="footer2Title">Sky-Hills Compound</h3>
+          <p data-key="footer2Desc">Premium residential compound in October Gardens, Egypt.</p>
+          <p><strong data-key="footer2Loc">Location:</strong> <span data-key="footer2LocVal">October Gardens</span></p>
+          <p><strong data-key="footer2Type">Type:</strong> <span data-key="footer2TypeVal">Residential Compound</span></p>
+        </div>
+        <div class="footer-section">
+          <h3 data-key="footer3Title">Contact Information</h3>
+          <p><i class="fas fa-phone"></i> <span data-key="footer3Phone">19938</span></p>
+          <p><i class="fas fa-envelope"></i> <span data-key="footer3Email">info@nbig.com</span></p>
+          <p><i class="fas fa-map-marker-alt"></i> <span data-key="footer3Loc">October Gardens, Egypt</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-key="copyright">© 2025 NBIG Developments. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript files (all defer for better performance) -->
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    // الصور للسلايدر
+    const images = [
+      "images/apartment/1.jpg", "images/apartment/2.jpg", "images/apartment/3.jpg", "images/apartment/4.jpg",
+      "images/apartment/6.jpg", "images/apartment/7.jpg", "images/apartment/8.jpg", "images/apartment/9.jpg",
+      "images/apartment/10.jpg", "images/apartment/11.jpg", "images/apartment/12.jpg", "images/apartment/14.jpg",
+      "images/apartment/15.jpg", "images/apartment/16.jpg", "images/apartment/17.jpg", "images/apartment/18.jpg",
+      "images/apartment/19.jpg", "images/apartment/20.jpg", "images/apartment/21.jpg", "images/apartment/22.jpg",
+      "images/apartment/23.jpg", "images/apartment/24.jpg", "images/apartment/25.jpg", "images/apartment/26.jpg",
+      "images/apartment/27.jpg", "images/apartment/28.jpg", "images/apartment/29.jpg", "images/apartment/30.jpg"
+    ];
+    let current = 0;
+    const sliderImg = document.getElementById('sliderImg');
+    document.getElementById('prevImg').onclick = function() {
+      current = (current - 1 + images.length) % images.length;
+      sliderImg.src = images[current];
+    };
+    document.getElementById('nextImg').onclick = function() {
+      current = (current + 1) % images.length;
+      sliderImg.src = images[current];
+    };
+
+    // contact form
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      var form = e.target;
+      var formData = new FormData(form);
+      fetch("https://script.google.com/macros/s/AKfycbyXMyFQ5rKOT0pcuMbqSaE4kxfKgcE-T3QefO_XarWl6EV8YE59uio8YgzZWdEiPQ-J/exec", {
+        method: "POST", body: formData
+      })
+      .then(res => res.text())
+      .then(txt => {
+        if (txt.includes("Success")) {
+          document.getElementById("success-msg").style.display = "block";
+          form.reset();
+          setTimeout(() => { document.getElementById("success-msg").style.display = "none"; }, 5000);
+        } else {
+          alert("⚠️ حصل خطأ غير متوقع: " + txt);
+        }
+      })
+      .catch(err => { alert("❌ حدث خطأ أثناء الإرسال");console.error(err); });
+    });
+
+    // Slider buttons hover
+    const buttons = document.querySelectorAll('#prevImg, #nextImg');
+    buttons.forEach(btn => {
+      btn.onmouseenter = () => {
+        btn.style.background = "rgba(255,255,255,0.9)";
+        btn.style.transform = btn.style.transform.replace("translateY(-50%)", "translateY(-50%) scale(1.1)");
+      };
+      btn.onmouseleave = () => {
+        btn.style.background = "rgba(255,255,255,0.6)";
+        btn.style.transform = btn.style.transform.replace(" scale(1.1)", "");
+      };
+    });
+
+    // === الترجمة الفورية للعربي والإنجليزي ===
+    const translations = {
+      en: {
+        home: "Home",
+        about: "About",
+        features: "Features",
+        contact: "Contact",
+        heroTitle: "Sky-Hills Compound",
+        heroDescription: "Premium residential living in Egypt's October Gardens with green spaces, integrated services, and flexible payment plans.",
+        callNowBtn: '<i class="fas fa-phone"></i> Call Now 19938',
+        ctaWhatsAppBtn: '<i class="fab fa-whatsapp"></i> WhatsApp',
+        videoTitle: "Apartment Tour (Video)",
+        galleryTourTitle: "Apartment Tour (Gallery)",
+        brochureTitle: "Project Brochure",
+        brochureDesc: "Download the full Sky-Hills project profile in PDF format",
+        viewPdfBtn: '<i class="fas fa-file-pdf"></i> View PDF',
+        locationTitle: "Location",
+        locationDesc: "Strategic position in October Gardens",
+        viewOnMapBtn: '<i class="fas fa-map-marker-alt"></i> View on Google Maps',
+        contactFormName: "Your Name",
+        contactFormEmail: "Your Email",
+        contactFormNumber: "Your Number",
+        contactFormMessage: "Your Message",
+        contactFormBtn: "Send",
+        ctaTitle: "Ready to Live the Sky-Hills Lifestyle?",
+        ctaDesc: "Contact us today to learn more and secure your residential unit in Sky-Hills Compound. Enjoy a future of luxury and comfort.",
+        ctaCallBtn: '<i class="fas fa-phone"></i> Call Now 19938',
+        footer1Title: "NBIG Developments",
+        footer1Desc: "Leading real estate developer in Egypt, specializing in residential, healthcare, and commercial projects.",
+        footer2Title: "Sky-Hills Compound",
+        footer2Desc: "Premium residential compound in October Gardens, Egypt.",
+        footer2Loc: "Location:",
+        footer2LocVal: "October Gardens",
+        footer2Type: "Type:",
+        footer2TypeVal: "Residential Compound",
+        footer3Title: "Contact Information",
+        footer3Phone: "19938",
+        footer3Email: "info@nbig.com",
+        footer3Loc: "October Gardens, Egypt",
+        copyright: "© 2025 NBIG Developments. All rights reserved."
+      },
+      ar: {
+        home: "الرئيسية",
+        about: "عن المشروع",
+        features: "المميزات",
+        contact: "اتصل بنا",
+        heroTitle: "كمبوند سكاي هيلز",
+        heroDescription: "حياة سكنية راقية في حدائق أكتوبر بمساحات خضراء وخدمات متكاملة وأنظمة سداد مرنة.",
+        callNowBtn: '<i class="fas fa-phone"></i> اتصل الآن 19938',
+        ctaWhatsAppBtn: '<i class="fab fa-whatsapp"></i> واتساب',
+        videoTitle: "جولة بالفيديو للشقة",
+        galleryTourTitle: "جولة بالصور للشقة",
+        brochureTitle: "كتيب المشروع",
+        brochureDesc: "قم بتحميل الملف التعريفي الكامل لمشروع سكاي هيلز بصيغة PDF",
+        viewPdfBtn: '<i class="fas fa-file-pdf"></i> عرض الملف PDF',
+        locationTitle: "الموقع",
+        locationDesc: "موقع استراتيجي في مدينة 6 أكتوبر",
+        viewOnMapBtn: '<i class="fas fa-map-marker-alt"></i> عرض على خرائط جوجل',
+        contactFormName: "اسمك",
+        contactFormEmail: "بريدك الإلكتروني",
+        contactFormNumber: "رقمك",
+        contactFormMessage: "رسالتك",
+        contactFormBtn: "إرسال",
+        ctaTitle: "جاهز لتعيش أسلوب حياة سكاي هيلز؟",
+        ctaDesc: "تواصل معنا الآن لمعرفة المزيد وحجز وحدتك السكنية في كمبوند سكاي هيلز. استمتع بمستقبل من الرفاهية والراحة.",
+        ctaCallBtn: '<i class="fas fa-phone"></i> اتصل الآن 19938',
+        footer1Title: "إن بي آي جي للتطوير العقاري",
+        footer1Desc: "شركة رائدة في تطوير العقارات بمصر، متخصصة في المشاريع السكنية والطبية والتجارية.",
+        footer2Title: "كمبوند سكاي هيلز",
+        footer2Desc: "كمبوند سكني فاخر في مدينة حدائق أكتوبر بمصر.",
+        footer2Loc: "الموقع:",
+        footer2LocVal: "حدائق أكتوبر",
+        footer2Type: "النوع:",
+        footer2TypeVal: "كمبوند سكني",
+        footer3Title: "معلومات التواصل",
+        footer3Phone: "19938",
+        footer3Email: "info@nbig.com",
+        footer3Loc: "اكتوبر الجيزه، مصر",
+        copyright: "© 2025 إن بي آي جي للتطوير العقاري. جميع الحقوق محفوظة."
+      }
+    };
+
+    let currentLang = "en";
+    document.getElementById("lang-toggle").addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "ar" : "en";
+      changeLanguage(currentLang);
+      document.getElementById("lang-toggle").textContent = currentLang === "en" ? "عربي" : "English";
+    });
+
+    function changeLanguage(lang) {
+      // RTL/LTR direction
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      document.body.style.textAlign = lang === "ar" ? "right" : "left";
+      // ترجمة كل العناصر التي تحمل data-key
+      Object.keys(translations[lang]).forEach(key => {
+        document.querySelectorAll(`[data-key="${key}"]`).forEach(el => {
+          if (translations[lang][key].includes('<i')) {
+            el.innerHTML = translations[lang][key];
+          } else {
+            el.textContent = translations[lang][key];
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>
